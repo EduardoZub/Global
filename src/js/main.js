@@ -264,12 +264,8 @@ function initMap() {
   });
 
   //scruipt for menu START
-  $('.header-burger').click(function() {
+  $('.header-burger,.menu-switch').click(function() {
     $('body').toggleClass('activation-menu');
-  });
-
-  $('.menu-switch').click(function() {
-    $('body').removeClass('activation-menu');
   });
 
 };

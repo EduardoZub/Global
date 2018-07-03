@@ -131,6 +131,7 @@ ul {
     height: 3px;
     background-color: #ffffff;
     margin-top: 5px;
+    -webkit-transition: all .4s;
   }
 
   &__item:first-child {
@@ -139,6 +140,17 @@ ul {
 
   &__item_width {
     width: 15px;
+    -webkit-transition: all .5s;
+  }
+}
+
+body.activation-menu .header-burger {
+  &__item {
+    width: 20px;
+  }
+
+  &__item_width {
+    width: 30px;
   }
 }
 // header END
@@ -208,12 +220,12 @@ ul {
   height: 50%;
   opacity: 1;
   perspective: 1000px;
-  -webkit-animation: menu-opacity 1s, menu-up 1s;
-  animation-timing-function: linear;
+  -webkit-animation: menu-opacity 1s, menu-up 1s, menu-opacity-back 1s;
+  -webkit-animation-timing-function: linear;
 }
 
 body.activation-menu .section-menu {
-  display: flex;
+  display: flex !important;
 }
 @-webkit-keyframes menu-opacity {
   0% {
@@ -258,10 +270,10 @@ body.activation-menu .section-menu {
 
 .front {
   background-color: #391557;
-  animation: front-rotate .8s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  animation-delay: 1.2s;
+  -webkit-animation: front-rotate 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 1.2s;
 
   &__text {
     font-family: "Mblack";
@@ -273,10 +285,10 @@ body.activation-menu .section-menu {
 .back {
   background-color: #0f33ff;
   transform: rotateY(180deg);
-  animation: back-rotate .8s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  animation-delay: 1.2s;
+  -webkit-animation: back-rotate 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 1.2s;
 }
 @-webkit-keyframes front-rotate {
   0% {}

@@ -80,6 +80,9 @@
   }
 }
 @media (max-width: 790px) {
+  .card{
+    width: 75%;
+  }
   .section-selected-work {
     padding-top: 100px;
   }
@@ -257,6 +260,10 @@
   }
 }
 @media (max-width: 457px) {
+  .card{
+    width: 90%;
+    height: 65%;
+  }
   .title-block {
     justify-content: center;
     align-items: center;
