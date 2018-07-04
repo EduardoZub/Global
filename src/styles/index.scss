@@ -822,7 +822,7 @@ h1 {
     font-size: 30px;
     color: #ffffff;
     text-align: center;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -872,13 +872,17 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 70px;
+  padding-top: 35px;
+
+  &__item{
+    width: 40%;
+  }
 }
 
 .data-block__input {
   width: 100%;
-  font-family: "Mregular";
-  font-size: 30px;
+  font-family: "Mbold";
+  font-size: 22px;
   color: #ffffff;
   background-color: transparent;
   border: none;
@@ -887,26 +891,26 @@ h1 {
 }
 
 input::-webkit-input-placeholder {
-  font-family: "Mregular";
-  font-size: 30px;
+  font-family: "Mbold";
+  font-size: 25px;
   color: #ffffff;
 }
 /* Firefox 19+ */
 input::-moz-placeholder {
-  font-family: "Mregular";
-  font-size: 30px;
+  font-family: "Mbold";
+  font-size: 25px;
   color: #ffffff;
 }
 /* Firefox 18- */
 input:-moz-placeholder {
-  font-family: "Mregular";
-  font-size: 30px;
+  font-family: "Mbold";
+  font-size: 25px;
   color: #ffffff;
 }
 
 input:-ms-input-placeholder {
-  font-family: "Mregular";
-  font-size: 30px;
+  font-family: "Mbold";
+  font-size: 25px;
   color: #ffffff;
 }
 
@@ -916,7 +920,7 @@ input:-ms-input-placeholder {
 
 .btn-block {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 35px;
 
   &__btn {
     display: block;

@@ -264,6 +264,9 @@
     width: 90%;
     height: 65%;
   }
+  .header-burger{
+    padding-right: 0px;
+  }
   .title-block {
     justify-content: center;
     align-items: center;
@@ -390,5 +393,8 @@
 
   .content-block {
     background-position: -41px -37px;
+  }
+  .data-block__item{
+    width: 85%;
   }
 }
